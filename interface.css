@@ -1,1 +1,17 @@
+#rollDice {
+  background-color: lightblue;
+  border-radius: 50px;
+  width: 12em;
+}
 
+#rollDice:hover {
+  background-color: orange;
+}
+
+#rollDice:hover span {
+  display: none
+}
+
+#rollDice:hover:before {
+  content: "Roll It Now!!!"
+}
