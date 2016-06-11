@@ -1,7 +1,10 @@
 #rollDice {
   background-color: lightblue;
   border-radius: 50px;
-  width: 12em;
+  width: 7.5em;
+  font-size: 20px;
+  font-weight:bold;
+  font-variant:small-caps;
 }
 
 #rollDice:hover {
@@ -13,5 +16,5 @@
 }
 
 #rollDice:hover:before {
-  content: "Roll It Now!!!"
+  content: "Roll Dice"
 }
