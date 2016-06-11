@@ -7,7 +7,7 @@ function getRandomInt(max) {
 
 function rollDice(){
   dice1Roll = getRandomInt(dice1Max);
-  document.getElementbyId("dice1").innerHTML = dice1Roll;
+  document.getElementById("dice1").innerHTML = dice1Roll;
   if(dice2Unlock === true){
     dice2Roll = getRandomInt(dice2Max);
   }
