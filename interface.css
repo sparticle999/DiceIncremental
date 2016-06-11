@@ -1,7 +1,3 @@
-body{
-  font-size:2em
-}
-
 #rollDice {
   background-color: lightblue;
   border-radius: 50px;
@@ -21,4 +17,26 @@ body{
 
 #rollDice:hover:before {
   content: "Roll Dice"
+}
+
+#dice1{
+  font-size:2em
+}
+
+#dice2{
+  font-size:2em
+}
+#dice3{
+  font-size:2em
+}
+#dice4{
+  font-size:2em
+}
+
+#dice5{
+  font-size:2em
+}
+
+#dice6{
+  font-size:2em
 }
