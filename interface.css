@@ -1,3 +1,7 @@
+body{
+  font-size:2em
+}
+
 #rollDice {
   background-color: lightblue;
   border-radius: 50px;
