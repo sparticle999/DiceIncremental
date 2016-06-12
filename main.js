@@ -42,6 +42,25 @@ function rollDice(){
     }
 }
 
+//Listens for key presses
+//Check "http://keycode.info/" to find a keycode
+window.onkeydown = function(e) {
+        e.preventDefault();
+        if (!e)
+        {
+            e = window.event;
+        }
+        var keyCode;
+        if(e.which) {
+            keyCode = e.which;
+        } else {
+            keyCode = e.keyCode;
+        }
+        if(keyCode === 82) {
+            rollDice();
+        }
+}
+
 function restartGame(){
     //Make this not an alert, but a popup div.
     alert("Restarting...");
