@@ -2,6 +2,12 @@ var dice1Max = 3; var dice2Max = 3; var dice3Max = 3; var dice4Max = 3; var dice
 var dice2Unlock = false; var dice3Unlock = false; var dice4Unlock = false; var dice5Unlock = false; var dice6Unlock = false;
 var rollsLeft = 10;
 
+function refreshStats(){
+    document.getElementById("rollsLeft").innerHTML = rollsLeft;
+    document.getElementById("gold").innerHTML = gold;
+    document.getElementById("xp").innerHTML = xp;
+}
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max) + 1;
 }
@@ -37,6 +43,10 @@ function rollDice(){
 }
 
 function restartGame(){
+    //Make this not an alert, but a popup div.
     alert("Restarting...");
-    
+    rollsLeft = 10;
+    gold = 0;
+    xp = 0;
+    refreshStats();
 }
