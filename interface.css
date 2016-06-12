@@ -1,4 +1,10 @@
+body{
+  font-size:2em
+    width:100%
+}
+
 #rollDice {
+  position:absolute;
   background-color: lightblue;
   border-radius: 50px;
   width: 7.5em;
@@ -19,31 +25,17 @@
   content: "Roll Dice"
 }
 
-#dice1{
-  font-size:2em
-}
-
-#dice2{
-  font-size:2em
-}
-#dice3{
-  font-size:2em
-}
-#dice4{
-  font-size:2em
-}
-
-#dice5{
-  font-size:2em
-}
-
-#dice6{
-  font-size:2em
-}
-
 #infoScreen{
+  position:relative;
   width:20em;
+  height:20em;
   margin-right:0;
   margin-left:auto;
-  border-color: lightblue;
+  border-style:solid;
+  border-color: green red;
+}
+
+#dice{
+  position:absolute;
+  margin-top:0;
 }
