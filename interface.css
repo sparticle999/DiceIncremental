@@ -4,7 +4,7 @@ body{
 }
 
 #rollDice {
-  position:absolute;
+  position:relative;
   background-color: lightblue;
   border-radius: 50px;
   width: 7.5em;
