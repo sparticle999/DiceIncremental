@@ -4,8 +4,8 @@ var rollsLeft = 10;
 
 function refreshStats(){
     document.getElementById("rollsLeft").innerHTML = rollsLeft;
-    document.getElementById("gold").innerHTML = gold;
-    document.getElementById("xp").innerHTML = xp;
+    document.getElementById("goldNum").innerHTML = gold;
+    document.getElementById("xpNum").innerHTML = xp;
 }
 
 function getRandomInt(max) {
