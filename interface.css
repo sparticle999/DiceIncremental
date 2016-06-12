@@ -40,3 +40,10 @@
 #dice6{
   font-size:2em
 }
+
+#infoScreen{
+  width:20em;
+  margin-right:0;
+  margin-left:auto;
+  border-color: lightblue;
+}
