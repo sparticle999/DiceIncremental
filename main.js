@@ -1,6 +1,8 @@
 var dice1Max = 3; var dice2Max = 3; var dice3Max = 3; var dice4Max = 3; var dice5Max = 3; var dice6Max = 3;
 var dice2Unlock = false; var dice3Unlock = false; var dice4Unlock = false; var dice5Unlock = false; var dice6Unlock = false;
+var dice1Roll = 0; var dice2Roll = 0; var dice3Roll = 0; var dice4Roll = 0; var dice5Roll = 0; var dice6Roll = 0;
 var rollsLeft = 10;
+var salary= 0;
 
 function refreshStats(){
     document.getElementById("rollsLeft").innerHTML = rollsLeft;
@@ -40,6 +42,8 @@ function rollDice(){
         dice6Roll = getRandomInt(dice6Max);
         document.getElementById("dice6Roll").innerHTML = dice6Roll;
     }
+    salary = dice1Roll + dice2Roll + dice3Roll + dice4Roll + dice5Roll + dice6Roll;
+    
 }
 
 //Listens for key presses
