@@ -16,10 +16,6 @@ function getRandomInt(max) {
 }
 
 function rollDice(){
-    rollsLeft -= 1;
-    if(rollsLeft === 0){
-        restartGame();
-    }
     dice1Roll = getRandomInt(dice1Max);
     document.getElementById("dice1Roll").innerHTML = dice1Roll;
     if(dice2Unlock === true){
@@ -51,7 +47,10 @@ function rollDice(){
     
     //Calculates when a pair is made.
     
-    
+    rollsLeft -= 1;
+    if(rollsLeft === 0){
+        restartGame();
+    }
     refreshStats();
     
 }
