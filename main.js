@@ -48,6 +48,7 @@ function rollDice(){
     //Calculates when a pair is made.
     
     rollsLeft -= 1;
+    document.getElementById("rollsLeft").innerHTML = rollsLeft;
     if(rollsLeft === 0){
         restartGame();
     }
