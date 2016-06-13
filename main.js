@@ -43,8 +43,8 @@ function rollDice(){
     }
     //Calculates total rolled
     salary = dice1Roll + dice2Roll + dice3Roll + dice4Roll + dice5Roll + dice6Roll;
-    document.getElementById("salaryBox").className = "";
-    document.getElementById("salaryNum").innerHTMl = salary;
+    document.getElementById("salary").className = "";
+    document.getElementById("salaryGoldNum").innerHTMl = salary;
     gold += salary;
     xp += salary;
     
