@@ -2,6 +2,7 @@ var dice1Max = 3; var dice2Max = 3; var dice3Max = 3; var dice4Max = 3; var dice
 var dice2Unlock = false; var dice3Unlock = false; var dice4Unlock = false; var dice5Unlock = false; var dice6Unlock = false;
 var dice1Roll = 0; var dice2Roll = 0; var dice3Roll = 0; var dice4Roll = 0; var dice5Roll = 0; var dice6Roll = 0;
 var rollsLeft = 10;
+var gold = 0; var xp = 0;
 var salary= 0;
 
 function refreshStats(){
