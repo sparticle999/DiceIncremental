@@ -53,7 +53,6 @@ function rollDice(){
         restartGame();
     }
     refreshStats();
-    
 }
 
 //Listens for key presses
