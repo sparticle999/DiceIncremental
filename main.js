@@ -16,7 +16,6 @@ function getRandomInt(max) {
 
 function rollDice(){
     rollsLeft -= 1;
-    document.getElementById("rollsLeft").innerHTML = rollsLeft;
     if(rollsLeft === 0){
         restartGame();
     }
@@ -42,7 +41,17 @@ function rollDice(){
         dice6Roll = getRandomInt(dice6Max);
         document.getElementById("dice6Roll").innerHTML = dice6Roll;
     }
+    //Calculates total rolled
     salary = dice1Roll + dice2Roll + dice3Roll + dice4Roll + dice5Roll + dice6Roll;
+    document.getElementById("salaryNum").className = "";
+    document.getElementById("salaryNum").innerHTMl = salary;
+    gold += salary;
+    xp += salary;
+    
+    //Calculates when a pair is made.
+    
+    
+    refreshStats();
     
 }
 
